@@ -1,29 +1,81 @@
-<h1>VIDEO</h1>
-<video src = "BoxCar.MOV" width = "400">
-		Your browser does not support the <code>video</code>
-		element.
-	</video>
-	<br>
-	<table border="1">
-		<tr>
-			<th>Child's Name: </th><th>Parent's Name</th>
-		</tr>
-		<tr>
-			<td rowspan="2">Catherine</td><td>Michael McCarthy</td>
-		</tr>
-		<tr>
-			<td>Colleen McCarthy</td>
-		</tr>
-		<tr>
-			<td>Ringo Sung</td><td rowspan="2">Shadow Chung</td>
-		</tr>
-		<tr>
-			<td>ZZZ</td>
-		</tr>
-	</table>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tele-medicince</title>
 
-	<A1>Audio</A1>
+    <!--using bootstrap css style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
 
-	<audio src = "https://upload.wikimedia.org/wikipedia/commons/0/04/Pyotr_Ilyich_Tchaikowsky_-_1812_overture.ogg" controls>
-		Pyothr Ilyich Tchaikovsky - 1812 overture
-<audio><br></audio>
+        <!--responsive logo disappear when extra small -->
+        <a href="index.html" class="pull-left d-sm-block d-none">
+          <div id="logo-img"></div>
+        </a>
+        <a class="navbar-brand" href="#">
+          <h1>Tele-medicince</h1>
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<div id="main-content" class="container">
+  
+  <!-- jumbotron  -->
+  <div class="jumbotron">
+    <img src="images/medical-robe.jpg" alt="" class="img-responsive d-sm-block d-none"></class>
+  </div>
+
+  <div title="home-tiles" class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <a herf="menu-categories.html"><div id="menu-tile"><span>menu
+      </span></div></a>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <a herf="single-categories.html"><div id="specials-tile"><span>menu
+      </span></div></a>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <a href="" target="_blank">
+        <div id="map-tile">
+          <span>map</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</div>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="/js/jquery-3.5.1.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>
